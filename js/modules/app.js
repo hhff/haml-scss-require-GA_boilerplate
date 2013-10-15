@@ -1,9 +1,9 @@
-define(['exampleModule'], function(em){
+define(['controller'], function(controller){
 
 	app = new Object();
 
 	app._init = function(){
-		em._init();		
+		controller._init();		
 	}
 
 	return app;
