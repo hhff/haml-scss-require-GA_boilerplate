@@ -355,7 +355,12 @@ table {
   border-spacing: 0;
 }
 
-/* line 6, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+/* line 9, ../scss/main.scss */
 body.no-scroll {
   position: fixed;
   overflow: hidden;
@@ -363,14 +368,25 @@ body.no-scroll {
   width: 100%;
 }
 
-/* line 14, ../scss/main.scss */
+/* line 17, ../scss/main.scss */
 .hidden {
   pointer-events: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+  z-index: -1;
 }
 
-/* line 19, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
+.lasso {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 28, ../scss/main.scss */
 #loader {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -388,9 +404,13 @@ body.no-scroll {
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
+  position: absolute;
+  width: 20%;
+  margin: 0 40%;
+  text-align: center;
 }
 
-/* line 23, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 #container {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -408,4 +428,8 @@ body.no-scroll {
   -moz-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
 }
