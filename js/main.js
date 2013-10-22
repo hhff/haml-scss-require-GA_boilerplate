@@ -10,6 +10,7 @@ require(['domReady','app'], function (domReady, app) {
 	
 	domReady(function(){
 		app._init();
+		app._removeLoader();
 	})
 
 });

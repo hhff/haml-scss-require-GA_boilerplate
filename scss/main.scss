@@ -3,7 +3,23 @@
 @import "customMixins";
 
 body {
+  &.no-scroll{
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hidden{
+  pointer-events:none;
+  @include opacity(0);
+}
+
+#loader{
+  @include customTransition(opacity, 2s, ease-in-out, 0s);
 }
 
 #container {
+  @include customTransition(opacity, 2s, ease-in-out, 2s);
 }

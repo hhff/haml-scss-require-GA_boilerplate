@@ -9,3 +9,10 @@
     @media (max-width: 650px)  { @content; }
   }
 }
+
+@mixin customTransition($property, $duration, $easing, $delay) {
+  @include transition-property($property);
+  @include transition-duration($duration);
+  @include transition-timing-function($easing); 
+  @include transition-delay($delay);
+}
