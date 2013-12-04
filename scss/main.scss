@@ -1,5 +1,6 @@
 @import "normalize";
 @import "compass";
+@import "fonts";
 @import "customMixins";
 
 body {
@@ -34,6 +35,14 @@ body {
   text-align: center;
 }
 
+h1{
+  font-family: $bodyFont;
+}
+
+h2{
+  font-family: $bodyFont;
+}
+
 #container {
   @include customTransition(opacity, 2s, ease-in-out, 2s);
 
@@ -41,4 +50,12 @@ body {
   height:100%;
   display:block;
   position:relative;
+
+  h1{
+    font-family: $bodyFont;
+  }
+
+  h2{
+    font-family: $bodyFont;
+  }
 }

@@ -355,12 +355,17 @@ table {
   border-spacing: 0;
 }
 
-/* line 5, ../scss/main.scss */
+@font-face {
+  font-family: "Source Sans Pro Light";
+  src: url('../fonts/SourceSansPro-Light.woff') format('woff'), url('../fonts/SourceSansPro-Light.otf') format('opentype'), url('../fonts/SourceSansPro-Light.svg') format('svg');
+}
+
+/* line 6, ../scss/main.scss */
 body {
   width: 100%;
   height: 100%;
 }
-/* line 9, ../scss/main.scss */
+/* line 10, ../scss/main.scss */
 body.no-scroll {
   position: fixed;
   overflow: hidden;
@@ -368,7 +373,7 @@ body.no-scroll {
   width: 100%;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 .hidden {
   pointer-events: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -376,7 +381,7 @@ body.no-scroll {
   z-index: -1;
 }
 
-/* line 23, ../scss/main.scss */
+/* line 24, ../scss/main.scss */
 .lasso {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -386,7 +391,7 @@ body.no-scroll {
   transform: translateY(-50%);
 }
 
-/* line 28, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 #loader {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -410,7 +415,17 @@ body.no-scroll {
   text-align: center;
 }
 
-/* line 37, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
+h1 {
+  font-family: Source Sans Pro Light;
+}
+
+/* line 42, ../scss/main.scss */
+h2 {
+  font-family: Source Sans Pro Light;
+}
+
+/* line 46, ../scss/main.scss */
 #container {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
@@ -432,4 +447,12 @@ body.no-scroll {
   height: 100%;
   display: block;
   position: relative;
+}
+/* line 54, ../scss/main.scss */
+#container h1 {
+  font-family: Source Sans Pro Light;
+}
+/* line 58, ../scss/main.scss */
+#container h2 {
+  font-family: Source Sans Pro Light;
 }

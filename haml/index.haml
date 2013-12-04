@@ -11,9 +11,10 @@
 		%link{ :href => "./css/main.css", :media => "screen", :rel => "stylesheet" }
 		%script{:type => 'text/javascript', :data => {:main => 'js/main'}, :src => 'js/require.js'}
 	%body.no-scroll
-		#loader.lasso Loading...
-		#container.hidden 
-			Container
+		#loader.lasso 
+			%h2 Loading...
+		#container.hidden
+			%h1 Container
 
 			:javascript
 				var _gaq = _gaq || [];
