@@ -5,16 +5,22 @@
 		%meta{ :content => "MY DESCRIPTION", :name => "description" }
 		%meta{ :content => "MY AUTHOR", :name => "author" }
 		%meta{ :charset => "UTF-8" }
+
+		%meta{ :property => "og:title", :content => "TITLE" }
+		%meta{ :property => "og:type", :content => "website" }
+		%meta{ :property => "og:image", :content => "CANONICAL PATH" }
+		%meta{ :property => "og:url", :content => "CANONICAL URL" }
+		%meta{ :property => "og:site_name", :content => "SITE NAME" }
+
 		%meta{ :name => "viewport", :content => "width=device-width" }
 		%meta{ :name => "viewport", :content => "initial-scale=1" }
 		%meta{ :name => "viewport", :content => "maximum-scale=1" }
 		%link{ :href => "./css/main.css", :media => "screen", :rel => "stylesheet" }
 		%script{:type => 'text/javascript', :data => {:main => 'js/main'}, :src => 'js/require.js'}
 	%body.no-scroll
-		#loader.lasso 
-			%h2 Loading...
-		#container.hidden
-			%h1 Container
+		#loader.lasso Loading...
+		#container.hidden 
+			Container
 
 			:javascript
 				var _gaq = _gaq || [];
