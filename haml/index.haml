@@ -15,8 +15,12 @@
 		%meta{ :name => "viewport", :content => "width=device-width" }
 		%meta{ :name => "viewport", :content => "initial-scale=1" }
 		%meta{ :name => "viewport", :content => "maximum-scale=1" }
+
+		%link{:rel => "icon", :type => "image/png", :href=> "./img/favicon.png" }
 		%link{ :href => "./css/main.css", :media => "screen", :rel => "stylesheet" }
+
 		%script{:type => 'text/javascript', :data => {:main => 'js/main'}, :src => 'js/require.js'}
+
 	%body.no-scroll
 		#loader.lasso Loading...
 		#container.hidden 
